@@ -17,5 +17,5 @@ reddit('AskReddit', 13, 'hot').then(data => console.log(data));
 
 ## Methods
 ```js
-Post.minified();
+Post.minified(); // returns the data without null values
 ```
