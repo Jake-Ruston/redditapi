@@ -1,0 +1,23 @@
+{
+  "name": "redditapi",
+  "version": "1.0.0",
+  "description": "An API wrapper for Reddit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jake-Ruston/redditapi.git"
+  },
+  "keywords": [
+    "reddit",
+    "api"
+  ],
+  "author": "Jake Ruston <rjake@hotmail.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jake-Ruston/redditapi/issues"
+  },
+  "homepage": "https://github.com/Jake-Ruston/redditapi#readme"
+}
