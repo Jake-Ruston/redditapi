@@ -4,11 +4,13 @@
 <p align="center">A simple to use module for interacting with the Reddit API.</p>
 
 <h2 align="center">Install</h2>
+
 ```bash
 npm i redditapi
 ```
 
 <h2 align="center">Example Usage</h2>
+
 ```js
 const Reddit = require('redditapi');
 const client = new Reddit.Client({
