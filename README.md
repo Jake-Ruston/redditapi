@@ -1,21 +1,28 @@
-# Reddit
-A simple to use module for interacting with the Reddit API.
+<h1 align="center">
+  <a href="https://www.npmjs.com/package/redditapi">RedditAPI</a>
+</h1>
+<p align="center">A simple to use module for interacting with the Reddit API.</p>
 
-## Install
+<h2 align="center">Install</h2>
+```bash
+npm i redditapi
 ```
-$ npm install redditapi
-```
-## How to
-```js
-// require the package
-const reddit = require('redditapi');
-reddit('AskReddit', 13, 'hot').then(data => console.log(data));
-```
-- `sub reddit` is required and must be a string.
-- `amount` is required and must be a string.
-- `topic` is `new` by default. Possible topics are `hot`, `new`, `rising`, `controversial`, `top`.
 
-## Methods
+<h2 align="center">Example Usage</h2>
 ```js
-Post.minified(); // returns the data without null values
+const Reddit = require('redditapi');
+const client = new Reddit.Client({
+  clientId: CLIENT_ID,
+  clientSecret: CLIENT_SECRET
+});
+
+client.subReddit('AskReddit').post({
+  title: 'Reddit, what do you think of my API wrapper?',
+  content: '~~Pretty neat, huh?~~'
+});
+
+client.authorize(ACCESS_TOKEN);
 ```
+
+<h2 align="center">Documentation</h2>
+https://google.com
