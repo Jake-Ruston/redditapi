@@ -1,7 +1,9 @@
-const reddit = require('.');
+const { CLIENT_ID, CLIENT_SECRET, ACCESS_TOKEN } = require('./config');
 
-reddit('AskReddit', 1).then(data => {
-  console.log(data.posts[0].minified());
+const reddit = require('.');
+const client = new reddit.Client({
+  clientId: CLIENT_ID,
+  clientSecret: CLIENT_SECRET
 });
 
-process.on('unhandledRejection', console.error);
+client.authorize(ACCESS_TOKEN).then(console.log);

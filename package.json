@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/Jake-Ruston/redditapi/issues"
   },
-  "homepage": "https://github.com/Jake-Ruston/redditapi#readme"
+  "homepage": "https://github.com/Jake-Ruston/redditapi#readme",
+  "dependencies": {}
 }
