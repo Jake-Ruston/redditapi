@@ -3,7 +3,6 @@ const Request = require('./misc/Request');
 /**
  * The main hub for interacting with the Reddit API
  */
-
 class Client {
   /**
    * @param {ClientOptions} [options] Options for the client
@@ -24,16 +23,3 @@ class Client {
 }
 
 module.exports = { Client };
-
-// authorizeUser(username, password) {
-//   return new Promise((resolve, reject) => {
-//     request('https://www.reddit.com/api/v1/access_token', {
-//       method: 'POST',
-//       form: { grant_type: 'password', username: username, password: password },
-//       auth: { username: this.clientId, password: this.clientSecret }
-//     }, (error, response, body) => {
-//       if (error) reject(error);
-//       resolve(body);
-//     });
-//   });
-// }
