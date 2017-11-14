@@ -20,5 +20,7 @@
     "url": "https://github.com/Jake-Ruston/redditapi/issues"
   },
   "homepage": "https://github.com/Jake-Ruston/redditapi#readme",
-  "dependencies": {}
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  }
 }

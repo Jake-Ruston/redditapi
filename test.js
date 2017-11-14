@@ -7,3 +7,5 @@ const client = new reddit.Client({
 });
 
 client.authorize(ACCESS_TOKEN).then(console.log);
+
+process.on('unhandledRejection', console.log);
