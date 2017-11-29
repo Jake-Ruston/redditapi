@@ -1,4 +1,4 @@
-const Request = require('./misc/Request');
+const Reddit = require('./Reddit');
 
 /**
  * The main hub for interacting with the Reddit API
@@ -13,12 +13,11 @@ class Client {
   }
 
   /**
-   * Authorizes the client
-   * @param {string} token Access Token of the account to authorize
-   * @returns {Promise<string>} Access Token of the account used
+   * @param {string} sub The subreddit to search for
    */
-  authorize(token) {
-    return new Request(token).authorize();
+  subReddit(sub) {
+    if (!sub) throw new Error('You must supply a sub reddit');
+    return new Reddit(sub);
   }
 }
 

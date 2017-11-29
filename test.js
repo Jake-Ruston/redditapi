@@ -1,11 +1,20 @@
-const { CLIENT_ID, CLIENT_SECRET, ACCESS_TOKEN } = require('./config');
+const { ACCESS_TOKEN } = require('./config');
 
 const reddit = require('.');
-const client = new reddit.Client({
-  clientId: CLIENT_ID,
-  clientSecret: CLIENT_SECRET
-});
+const client = new reddit.Client(ACCESS_TOKEN);
 
-client.authorize(ACCESS_TOKEN).then(console.log);
+// client.subReddit('AskReddit')
+//   .post({
+//     title: 'My Title',
+//     content: 'Content of my sick post'
+//   })
+//   .then(console.log);
+
+client.subReddit('6thform')
+  .get({
+    topic: 'new',
+    limit: 2
+  })
+  .then(console.log);
 
 process.on('unhandledRejection', console.log);

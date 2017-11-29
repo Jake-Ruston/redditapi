@@ -13,18 +13,13 @@ npm i redditapi
 
 ```js
 const Reddit = require('redditapi');
-const client = new Reddit.Client({
-  clientId: CLIENT_ID,
-  clientSecret: CLIENT_SECRET
-});
+const client = new Reddit.Client(ACCESS_TOKEN);
 
-client.subReddit('AskReddit').post({
-  title: 'Reddit, what do you think of my API wrapper?',
-  content: '~~Pretty neat, huh?~~'
+client.subReddit('AskReddit').get({
+  topic: 'new',
+  limit: 3
 });
-
-client.authorize(ACCESS_TOKEN);
 ```
 
 <h2 align="center">Documentation</h2>
-https://google.com
+https://github.com/Jake-Ruston/redditapi/wiki/Docmentation
